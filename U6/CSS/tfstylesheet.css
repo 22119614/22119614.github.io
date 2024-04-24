@@ -1,0 +1,112 @@
+
+body {
+  font-family: Calibri, Bold, Arial, Impact;
+  background-color: #c9daf8;
+  width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2px;
+}
+
+#page {
+  background-color: #9fc5e8;
+  padding: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #9fc5e8;
+  border-color: #2980b9;
+  color: #9fc5e8;
+}
+
+footer {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto auto;
+padding: 10px;
+}
+
+.grid-item {
+text-align: justify;
+padding: 5px;
+}
+
+.grid-container2 {
+display: grid;
+grid-template-columns: auto auto auto auto;
+padding: 10px;
+}
+
+.grid-item {
+text-align: justify;
+padding: 5px;
+}
+
+
+
