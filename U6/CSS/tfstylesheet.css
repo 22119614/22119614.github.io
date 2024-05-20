@@ -1,11 +1,7 @@
-
 body {
   font-family: Calibri, Bold, Arial, Impact;
   background-color: #c9daf8;
-  width: 1400px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 2px;
+  width: 100%;
 }
 
 #page {
@@ -13,9 +9,29 @@ body {
   padding: 20px;
 }
 
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+  width: 50%;
+  padding: 8px;
+  margin: 5px;
+  font-size: 15px;
+}
+
+form {
+  text-align: center;
+  margin-top: 20px;
+}
+
 .btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border: 2px solid transparent;
   border-radius: 5px;
   background-color: #3498db;
@@ -28,12 +44,12 @@ body {
 .btn:hover {
   background-color: #9fc5e8;
   border-color: #2980b9;
-  color: #9fc5e8;
+  color: #fff;
 }
 
 footer {
-  background-color: #3498db;
-  color: #fff;
+  background-color:#9fc5e8;
+  color: #000000;
   padding: 10px 20px;
   text-align: center;
 }
@@ -48,65 +64,64 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-pinterest {
-  background: #cb2027;
-  color: white;
-}
-
 .grid-container {
-display: grid;
-grid-template-columns: auto auto auto auto;
-padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
 }
 
 .grid-item {
-text-align: justify;
-padding: 5px;
+  padding: 20px;
+  text-align: center;
 }
 
 .grid-container2 {
-display: grid;
-grid-template-columns: auto auto auto auto;
-padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
 }
 
-.grid-item {
-text-align: justify;
-padding: 5px;
+.grid-item2 {
+  padding: 20px;
+  text-align: center;
 }
 
+.container {
+  position: relative;
+  width: 20%;
+}
 
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease;
+  backface-visibility: hidden;
+}
 
+.middle {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #9fc5e8;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
